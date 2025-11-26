@@ -5,6 +5,9 @@
   "description": "تطبيق سطح المكتب لنظام الخدمات الإداري",
   "main": "main.cjs",
   "type": "module",
+  "engines": {
+    "node": "18.x" 
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
