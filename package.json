@@ -1,0 +1,40 @@
+{
+  "name": "services-admin-system",
+  "private": false,
+  "version": "1.0.0",
+  "description": "تطبيق سطح المكتب لنظام الخدمات الإداري",
+  "main": "main.cjs",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start-electron": "electron .",
+    "package-win": "electron-builder --win"
+  },
+  "dependencies": {
+    "lucide-react": "^0.554.0",
+    "react": "^19.2.0",
+    "recharts": "^3.5.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0",
+    "electron": "^28.2.5",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.yourcompany.serviceapp",
+    "productName": "نظام الخدمات الإداري",
+    "files": [
+      "dist/**/*",
+      "main.cjs"
+    ],
+    "win": {
+      "target": "nsis"
+    }
+  }
+}
